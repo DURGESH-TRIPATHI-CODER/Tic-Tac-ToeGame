@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3b3f47;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.interface {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #61dafb; /* Heading color */
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px; /* Increased padding for larger input */
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #61dafb; /* Added border for input fields */
+    font-size: 1.2em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #21a1f1; /* Focus color */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #61dafb;
+    color: #282c34; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for effect */
+}
+
+button:hover {
+    background-color: #21a1f1; /* Hover color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    transition: transform 0.3s ease; /* Added transition for smoother board appearance */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #61dafb; /* Cell color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #282c34; /* Color of markers */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for cells */
+}
+
+.cell:hover {
+    background-color: #5bc0de; /* Cell hover color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+#turn-indicator {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #61dafb; /* Turn indicator color */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #3b3f47;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    color: white;
+    border-radius: 10px; /* Rounded corners for modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
