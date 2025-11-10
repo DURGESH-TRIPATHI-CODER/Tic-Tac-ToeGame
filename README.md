@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Game
 
-Welcome to the **Tic-Tac-Toe Game**! This project lets you play the classic game of Tic-Tac-Toe with enhanced features and a modern look.
+Welcome to the **Tic-Tac-Toe Game**! This project lets you play the classic game of Tic-Tac-Toe with enhanced features and a modern look.  
 
 ## Features
 
